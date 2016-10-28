@@ -13,6 +13,7 @@ use std::fmt;
 use std::error::Error;
 
 
+#[derive(Debug)]
 pub struct Property {
     /// Key in component.
     pub name: String,
@@ -56,6 +57,7 @@ impl Clone for Property {
     }
 }
 
+#[derive(Debug)]
 pub struct Component {
     /// The name of the component, such as `VCARD` or `VEVENT`.
     pub name: String,
